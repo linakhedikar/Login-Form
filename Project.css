@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-img{
+    background-image:linear-gradient(black,blue),url("C:\Users\Dell\Downloads\img.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+.bg-img:after{
+position: absolute;
+content: ' ';
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: rgba(0, 0,0,0.7);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 999;
+    width: 370px;
+    text-align: center;
+    padding: 60px 32px;
+    background: rgba(255, 255,255,0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0, 0,0,0.7);
+}
+.content header{
+    color: white;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    font-family: sans-serif;
+}
+.field span{
+    color: white;
+    width: 40px;
+    line-height: 45px;
+}
+.field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background: rgba(255, 255,255,0.94);
+}
+.field input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+}
+.space{
+    margin-top: 16px;
+}
+.pass{
+    text-align: left;
+    margin: 10px 0;    
+}
+.pass a{
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+}
+.pass :hover a{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    background:#3498db;
+    border: 1px solid #2691d9;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+input[type="submit"]:hover{
+    background:rgba(0, 255, 42, 0.753);
+}
+.login{
+    color: white;
+    margin:20px 0;
+    font-family: 'Poppins',sans-serif;
+}
